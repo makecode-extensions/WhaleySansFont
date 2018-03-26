@@ -1,6 +1,10 @@
 # WhaleySans Font
 
-makecode WhaleySans Font package for micro:bit  
+makecode WhaleySans Font package for micro:bit
+
+WhaleySans Font is a very small font (2 x 5), may show two digital in 5 x 5 LEDs.  
+
+WhaleySans Font is from [DavidMS51/whaley_clock](https://github.com/DavidMS51/whaley_clock).
 
 Author: shaoziyang  
 Date:   2018.Mar  
