@@ -34,6 +34,9 @@ namespace whaleysans {
     //% blockId="show_whaleysans_number" block="show a whaleysans number %dat"
     //% dat.min=0 dat.max=99
     export function showNumber(dat: number): void {
+        if(dat<0)
+            dat=0;
+
         let a = FONT[(dat / 10) % 10];
         let b = FONT[dat % 10];
 
