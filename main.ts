@@ -37,7 +37,7 @@ namespace whaleysans {
         if(dat<0)
             dat=0;
 
-        let a = FONT[(dat / 10) % 10];
+        let a = FONT[Math.idiv(dat, 10) % 10];
         let b = FONT[dat % 10];
 
         img.clear()
