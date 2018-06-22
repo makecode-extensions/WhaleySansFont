@@ -40,7 +40,6 @@ namespace whaleysans {
         let a = FONT[Math.idiv(dat, 10) % 10];
         let b = FONT[dat % 10];
 
-        img.clear()
         for (let i = 0; i < 5; i++) {
             img.setPixel(0, i, 1 == a[i * 2])
             img.setPixel(1, i, 1 == a[i * 2 + 1])
