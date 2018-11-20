@@ -8,7 +8,7 @@
     },
     "files": [
         "README.md",
-        "main.ts"
+        "WhaleySansFont.ts"
     ],
     "testFiles": [
         "test.ts"

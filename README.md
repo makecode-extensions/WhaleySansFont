@@ -1,6 +1,6 @@
 # WhaleySans Font
 
-makecode WhaleySans Font package for micro:bit
+makecode WhaleySans Font extension for micro:bit
 
 WhaleySans Font is a very small font (2 x 5), may show two digital in 5 x 5 LEDs.  
 
@@ -9,17 +9,27 @@ WhaleySans Font is from [whaleygeek/mb_clock](https://github.com/whaleygeek/mb_c
 Author: shaoziyang  
 Date:   2018.Mar  
 
-![](https://raw.githubusercontent.com/microbit-makecode-packages/WhaleySansFont/master/icon.png)  
+![](icon.png)  
   
 
-## usage
+## Add extension
 
 open your microbit makecode project, in Add Package, paste  
 
-https://github.com/microbit-makecode-packages/WhaleySansFont  
+https://github.com/makecode-packages/WhaleySansFont  
 
 to search box then search.
 
+
+## Basic usage
+```
+let item = 0
+item = 0
+basic.forever(() => {
+    whaleysans.showNumber(item)
+    item += 1
+}) 
+```
 
 ## API
 
@@ -29,9 +39,9 @@ dat: 0-99
 
 ## Demo
 
-![](https://raw.githubusercontent.com/microbit-makecode-packages/WhaleySansFont/master/demo.png)  
+![](demo.png)  
 
-![](https://raw.githubusercontent.com/microbit-makecode-packages/WhaleySansFont/master/demo.gif)  
+![](demo.gif)  
 
 ## License
 
