@@ -8,6 +8,7 @@
     },
     "files": [
         "README.md",
+        "_locales/zh/WhaleySansFont-strings.json",
         "WhaleySansFont.ts"
     ],
     "testFiles": [
