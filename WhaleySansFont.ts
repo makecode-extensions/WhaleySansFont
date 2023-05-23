@@ -34,18 +34,29 @@ namespace whaleysans {
     //% blockId="show_whaleysans_number" block="show a whaleysans number %dat"
     //% dat.min=0 dat.max=99
     export function showNumber(dat: number): void {
-        if(dat<0)
-            dat=0;
+        if (dat < 0)
+            dat = 0;
 
-        let a = FONT[Math.idiv(dat, 10) % 10];
-        let b = FONT[dat % 10];
-
-        for (let i = 0; i < 5; i++) {
-            img.setPixel(0, i, 1 == a[i * 2])
-            img.setPixel(1, i, 1 == a[i * 2 + 1])
-            img.setPixel(3, i, 1 == b[i * 2])
-            img.setPixel(4, i, 1 == b[i * 2 + 1])
+        if (dat > 99) {
+            basic.showLeds(`
+            # . . . .
+            # . . . .
+            # . # . #
+            # . . . .
+            # . . . .
+            `, 10)
         }
-        img.showImage(0, 10);
+        else {
+            let a = FONT[Math.idiv(dat, 10) % 10];
+            let b = FONT[dat % 10];
+
+            for (let i = 0; i < 5; i++) {
+                img.setPixel(0, i, 1 == a[i * 2])
+                img.setPixel(1, i, 1 == a[i * 2 + 1])
+                img.setPixel(3, i, 1 == b[i * 2])
+                img.setPixel(4, i, 1 == b[i * 2 + 1])
+            }
+            img.showImage(0, 10);
+        }
     }
 }
