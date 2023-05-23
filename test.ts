@@ -1,6 +1,8 @@
 let item = 0
-item = 0
-basic.forever(() => {
+basic.forever(function () {
     whaleysans.showNumber(item)
     item += 1
+    if (item > 120) {
+        item = 0
+    }
 })
